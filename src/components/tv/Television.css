@@ -1,0 +1,46 @@
+.modalOverlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.modalForeground {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.modalContent {
+    position: relative;
+    display: block;
+    width: 634px;
+    height: 356px;
+    margin: 100px auto;
+}
+
+.television {
+    width: 600px;
+}
+
+.televisionScreen {
+    width: 500px;
+}
+
+.video {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 570px;
+}
+.video video {
+    width: 570px;
+}

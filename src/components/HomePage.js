@@ -5,8 +5,7 @@ import GeneralCategory from './blocks/general';
 import DigitalIOCategory from './blocks/digital_io';
 import AnalogIOCategory from './blocks/analog_io';
 import ServoCategory from './blocks/servos';
-import RoboticArmKitCategory from './blocks/arm';
-import PiezoMusicKitCategory from './blocks/music';
+import SerialCategory from './blocks/serial';
 import VariablesCategory from './blocks/variables';
 import SensorsCategory from './blocks/sensors';
 import LedStripsCategory from './blocks/led_strips';
@@ -24,8 +23,7 @@ const ScratchOverview = () => (
             <SensorsCategory />
             <VariablesCategory />
             <LedStripsCategory />
-            <RoboticArmKitCategory />
-            <PiezoMusicKitCategory />
+            <SerialCategory />
         </ScratchContainer>
     </div>
 );

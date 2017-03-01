@@ -1,11 +1,10 @@
 /* eslint-disable no-console */
 const exec = require('child-process-promise').exec;
 
-import dotenv from 'dotenv';
-const dotEnvVars = dotenv.config();
+const dotEnv = require('dotenv').config();
 
-const S3_BUCKET = dotEnvVars.S3_BUCKET;     // 's3://makervision.io/'
-const DIST_ID = dotEnvVars.DISTRIBUTION_ID;  // 'E19ZMQITK42C59';
+const S3_BUCKET = dotEnv.S3_BUCKET;
+const DIST_ID = dotEnv.DISTRIBUTION_ID;
 
 const SYNC_DIST_TO_S3 = `aws s3 sync ./dist/ ${S3_BUCKET} --region us-west-2` +
     ' --delete --cache-control max-age=900';
